@@ -35,7 +35,7 @@ A clean, responsive, and dynamic web application that fetches user data from a p
 
 ## 📸 Screenshots
 
-![user Directory](/Screenshot.png)
+![user Directory](Screenshot.png)
 
 
 
