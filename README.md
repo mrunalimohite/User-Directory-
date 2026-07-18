@@ -31,7 +31,7 @@ A clean, responsive, and dynamic web application that fetches user data from a p
 ├── script.js       # API fetching logic, rendering pipeline, and filtering event listeners
 └── README.md        # Project documentation
 
-
+```
 
 ## 📸 Screenshots
 
