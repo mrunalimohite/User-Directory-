@@ -38,7 +38,6 @@ A clean, responsive, and dynamic web application that fetches user data from a p
 ![user Directory](Screenshot.png)
 
 
-
 ## 👨‍💻 Author
 
 **Mrunali Mohite**
