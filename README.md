@@ -4,7 +4,7 @@ A clean, responsive, and dynamic web application that fetches user data from a p
 
 ## 🚀 Live Preview
 *(Optional: Add your deployed link here once you host it on GitHub Pages or Vercel)*
-> 🔗 [Live Demo Link](https://your-username.github.io/your-repository-name)
+> 🔗 [https://userdirectory-api-project.netlify.app/](https://userdirectory-api-project.netlify.app/)
 
 ## ✨ Features
 
