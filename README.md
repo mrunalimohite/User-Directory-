@@ -30,3 +30,16 @@ A clean, responsive, and dynamic web application that fetches user data from a p
 ├── style.css        # Responsive styling rules and responsive layout layers
 ├── script.js       # API fetching logic, rendering pipeline, and filtering event listeners
 └── README.md        # Project documentation
+
+
+
+## 📸 Screenshots
+
+![user Directory](Screenshot.png)
+
+
+
+## 👨‍💻 Author
+
+**Mrunali Mohite**
+
