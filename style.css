@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    background-color: #F4F4F4;
+    overflow-y: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 3rem;
+}
+h1{
+    margin-top: 4rem;
+    font-size: 4rem;
+    color: #005461;
+    font-weight: 700;
+}
+.description{
+    font-size: 1.8rem;
+    color: #018790;
+}
+.search-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+.search-input input{
+    border: none;
+    padding: 10px;
+    font-size: 1.6rem;
+    outline: none;
+    width: 100%;           /* Spans full available width on small screens */
+    max-width: 450px;
+}
+.search-input .searchBtn{
+    background-color: #018790;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.user-card{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.img-box{
+    width: 100px;
+    height: 100px;
+    /* margin: auto; */
+    border-radius: 50%;
+    border: 2px solid #018790;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-information{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-information h2{
+    font-size: 2rem;
+    color: #005461;
+    margin: 4px 0;
+}
+.user-information .role{
+    font-size: 1.6rem;
+    color: #018790;
+}
+.user-information .country{
+    font-size: 1.4rem;
+    color: #FCC61D;
+}
+.user-information .country i{
+    margin-right: 5px;
+}
+.user-information .other{
+    font-size: 1.4rem;
+    color: #333;
+}
+.user-information .other i{
+    margin-right: 5px;
+}
+/* Container holding the input field and icon button */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+
+/* Give the text room on the right so typing doesn't slip under the 'X' */
+.input-wrapper input {
+    width: 100%;
+    padding-right: 35px; 
+}
+
+/* Styles to position the icon cleanly inside the input box boundary */
+.clear-btn {
+    /* position: absolute;
+    right: 5px; */
+    background: none;
+    border: none;
+    color: #a0a0a0;
+    cursor: pointer;
+    display: none; /* Keep hidden until user types */
+    padding: 0;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.clear-btn:hover {
+    color: #333333; /* Darken the 'X' slightly on hover */
+}
+@media (max-width: 768px) {
+    .user-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 balanced columns */
+    }
+}
+
+/* Screen widths: Mobile Phones (480px and smaller) */
+@media (max-width: 480px) {
+    .user-container {
+        /* FIXED: Added correct count argument '1' to avoid parser crash */
+        grid-template-columns: repeat(1, 1fr); /* Stacks cards cleanly in 1 column */
+    }
+    
+    .search-input {
+        flex-direction: column; /* Stacks the search input and button on mobile screens */
+        align-items: center;    /* FIX 1: Centers the items horizontally in the column layout */
+        justify-content: center;
+        width: 100%;
+        gap: 15px;              /* Gives a bit of space between the input box and the button */
+    }
+    
+    .input-wrapper {
+        width: 100%;            /* FIX 2: Ensures the wrapper takes full width of the bar */
+    }
+
+    .search-input input {
+        width: 100%;
+        text-align: center;     /* OPTIONAL: Centers the placeholder text for a balanced look */
+    }
+
+    .searchBtn {
+        width: 100%;            /* OPTIONAL: Makes the search button full width on tiny screens */
+    }
+}
